@@ -1,15 +1,52 @@
 /*
 Colors used:
-Primary Color (Green): #cccc33; 204,204,51,0.80 (80% green)
+Primary Color (Green): #cccc33;  rgba(204, 204, 51, 0.08); (80% green)
 Secondary Color (Gray): #58595b; 88,89,91,0.50 (50% gray)
+Black: 
 
 copied from google fonts
+#myheadings
 font-family: 'Oswald', sans-serif;
+#mybody
 font-family: 'Hind Siliguri', sans-serif;
-
 */
 
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
 
-font-family: 'Oswald', sans-serif;
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+body {
+    background-color: rgba(204, 204, 51, 0.08);
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #000000;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+    color: #cccc33;
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 2.75em;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
 
-font-family: 'Hind Siliguri', sans-serif;
