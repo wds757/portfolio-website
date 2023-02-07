@@ -27,12 +27,13 @@ body {
     color: #000000;
   }
   
-  h1, h2, h3, h4 {
+  h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
-    color: #cccc33;
+    color:#cccc33;
     line-height: 1.4;
   }
   h1 {
+    color:#58595b;
     font-size: 2.75em;
     font-weight: 600;
   }
