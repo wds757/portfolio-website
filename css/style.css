@@ -52,7 +52,7 @@ body {
     font-weight: 400;
   }
 
-  /* Hyperlink Styling */ 
+/* Hyperlink Styling */ 
 
   a {
     color: #0e9236;  /* normal state - dark green*/
@@ -73,4 +73,21 @@ body {
       color: #303e99;
     }
 
-    
+    img{
+width: 100%;
+    }
+
+/* button styling */
+  .button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #cccc33;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.2s opacity;
+  }
+  .button:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+  }
