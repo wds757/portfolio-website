@@ -50,4 +50,27 @@ body {
   h4 {
     font-size: 1.35em;
     font-weight: 400;
+  }
 
+  /* Hyperlink Styling */ 
+
+  a {
+    color: #0e9236;  /* normal state - dark green*/
+    text-decoration: none; /* No underlining */
+  }
+
+    a:visited { /* visited link - purple*/
+      color: #8f2ff0;
+    }
+
+    a:hover,
+    a:focus {  /* focus & hover for mobile - red*/
+      color: #ef4305;
+      text-decoration: underline; /* Underlining when hovering over a link */
+    }
+
+    a:active { /* selected link - blue*/
+      color: #303e99;
+    }
+
+    
