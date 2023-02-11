@@ -92,10 +92,4 @@ width: 100%;
     text-decoration: none;
   }
 
-  header {
-    background-color:#cccc33;  /* add color behind entire header section */
-    padding: 10px;   /* adds same space between text and edge of page, to all sides */
-    margin: 10px;  /* adds space between background-color and edge of page */
-  }
-
 
