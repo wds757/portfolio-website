@@ -101,7 +101,10 @@ width: 100%;
   .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
   }
-  
-
-
-
+  #work .row {
+    padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; /* adds rule after button */
+  }
+ 
+  #hero h1 {
+    text-align: center; /* Centers text */
+  }
