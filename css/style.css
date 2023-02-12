@@ -104,7 +104,10 @@ width: 100%;
   #work .row {
     padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; /* adds rule after button */
   }
- 
+  .logo {
+    max-width: 250px;
+  }
+  
   #hero h1 {
     text-align: center; /* Centers text */
   }
