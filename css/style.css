@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary Color (Green): #cccc33;  rgba(204, 204, 51, 0.08); (80% green)
+Primary Color (Green): #cccc33;  rgba(204, 204, 51, 0.08); (80% green) or  rgba(204, 204, 51, 0.3) 30%
 Secondary Color (Gray): #58595b; 88,89,91,0.50 (50% gray)
 Black: 
 
@@ -114,22 +114,54 @@ width: 100%;
 /* Layout-navigation styling */
 
   header {  /* adds background and padding of nav bar */
-    background-color: #ffe4c4;
+    background-color: #020202;
     text-align: center;
     padding: 10px 0;  
+    position:fixed;  /* freezes top header area while scrolling - works with shadow effect if using */
+    width: 100%;
   }
+
+
   nav > ul {  /* selects unordered lists within the nav element */
     list-style-type: none;
-    padding: 0;   
+    padding: 0; 
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000000;   
   }
-  nav > ul > li {  /* selects list elements in unordered lists within the nav element */
+  /* selects list elements in unordered lists within the nav element (nav>ul>li) add a:visited etc, to change button states */
+  nav > ul > li {  
     display: inline-block; 
+    width: 100%;
   }
-  nav > ul > li > a {   /* selects links that are list elements in unordered lists within the nav element & adds padding around each word or link */
+  /* selects links that are list elements in unordered lists within the nav element & adds padding around each word or link - then add to a;visited, :hover, :active states*/
+  nav > ul > li > a:visited {   
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 600;
-    color: #4a4a4a; 
+    color: #cccc33; 
   }
+  nav > ul > li > a:hover {   
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #e2e2e2; 
+  }
+  nav > ul > li > a:active { 
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 600;  
+    color: #1937fe; 
+  }
+  #hero {
+    background-color: rgba(204, 204, 51, 0.3);    /* creates a space above */
+    padding: 20px 0;     /* removes white space above h1 */
+    display: inline-block;
+    width: 100%;
+    border-top: 3px solid #4a4a4a;   /* used this instead of shadow - generator link didn't work */
+}
 
+main {
+  padding-top: 250px;
+}
 
