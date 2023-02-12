@@ -92,22 +92,44 @@ width: 100%;
     text-decoration: none;
   }
 
-
   /* Layout styling */
-  .container {
-    padding: 0 15px;
-  }
 
+  .container {
+    padding: 0 15px;    /* overall page padding or margin */
+  }
   .row {
-    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    margin: 25px 0px; /* 25px top and bottom, 0 left and right - right side goes to 0?? */
   }
   #work .row {
-    padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; /* adds rule after button */
+    padding-bottom: 25px; 
+    border-bottom: 1px solid #4a4a4a; /* adds rule after button */
   }
   .logo {
-    max-width: 250px;
+    max-width: 250px; /* keeps logo to max width for different screen views */
   }
-  
   #hero h1 {
-    text-align: center; /* Centers text */
+    text-align: center; /* Centers text in hero section only on h1 */
   }
+
+/* Layout-navigation styling */
+
+  header {  /* adds background and padding of nav bar */
+    background-color: #ffe4c4;
+    text-align: center;
+    padding: 10px 0;  
+  }
+  nav > ul {  /* selects unordered lists within the nav element */
+    list-style-type: none;
+    padding: 0;   
+  }
+  nav > ul > li {  /* selects list elements in unordered lists within the nav element */
+    display: inline-block; 
+  }
+  nav > ul > li > a {   /* selects links that are list elements in unordered lists within the nav element & adds padding around each word or link */
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #4a4a4a; 
+  }
+
+
