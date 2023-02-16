@@ -131,7 +131,7 @@ width: 100%;
   }
   /* selects list elements in unordered lists within the nav element (nav>ul>li) add a:visited etc, to change button states */
   nav > ul > li {  
-    display: inline-block; 
+    display: inline; 
     width: 100%;
   }
   /* selects links that are list elements in unordered lists within the nav element & adds padding around each word or link - then add to a;visited, :hover, :active states*/
@@ -160,8 +160,29 @@ width: 100%;
     width: 100%;
     border-top: 3px solid #4a4a4a;   /* used this instead of shadow - generator link didn't work */
 }
-
 main {
   padding-top: 261px;
+}
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)-like my cinema display
+================================= */
+@media only screen and (min-width: 1920px) {
 }
 
