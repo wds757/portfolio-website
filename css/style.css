@@ -195,6 +195,9 @@ Medium devices (640px and larger)
   #hero span {
     display: block;
   }
+  .col-md-6 {
+    width: 50%;
+  }
   }
 
 
