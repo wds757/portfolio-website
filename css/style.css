@@ -108,8 +108,8 @@ body {
     padding-bottom: 25px; 
     border-bottom: 1px solid #4a4a4a; /* adds rule after button */
   }
-  .logo {
-    max-width: 250px; /* keeps logo to max width for different screen views */
+  #logo {
+    max-width: 250px; /* keeps logo to max width for different screen views - changed DOT to HashTag */
   }
   #hero{
     text-align: center; /* Centers text in hero section */
@@ -124,8 +124,6 @@ body {
     position:fixed;  /* freezes top header area while scrolling - works with shadow effect if using */
     width: 100%;
   }
-
-
   nav > ul {  /* selects unordered lists within the nav element */
     list-style-type: none;
     padding: 0; 
@@ -198,6 +196,17 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
+  [class*="col-"] {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
   }
 
 
