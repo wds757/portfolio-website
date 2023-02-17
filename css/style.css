@@ -76,7 +76,6 @@ body {
       color: #303e99;
     }
 
-
     img{
       width: 100%;
           }
@@ -111,8 +110,8 @@ body {
   #logo {
     max-width: 250px; /* keeps logo to max width for different screen views - changed DOT to HashTag */
   }
-  #hero{
-    text-align: center; /* Centers text in hero section */
+  #hero {
+    text-align: center; /* Centers text in hero sections */
   }
 
 /* Layout-navigation styling */
@@ -120,7 +119,7 @@ body {
   header {  /* adds background and padding of nav bar */
     background-color: #020202;
     text-align: center;
-    padding: 10px 0;  
+    padding: 10px 10;  
     position:fixed;  /* freezes top header area while scrolling - works with shadow effect if using */
     width: 100%;
   }
@@ -161,15 +160,29 @@ body {
     padding: 10px 0;     /* removes white space above h1 */
     display: inline-block;
     width: 100%;
-    border-top: 3px solid #4a4a4a;   /* used this instead of shadow - generator link didn't work */
+/* used line instead (took out) of shadow - generator link didn't work */
 }
 main {
   padding-top: 200px;
 }
 
 
+  /* added the sizes below from w3schools.com responsive columns
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}    */
+
 /* ==============================
-Medium devices (640px and larger)
+Medium devices (640px and larger) - tablets
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
@@ -185,7 +198,7 @@ Medium devices (640px and larger)
     padding-top: 200px;
   }
   header img {
-    width: 20%;
+    width: 30%;
   }
   body {
     font-size: 18px; /* changes from 16 to 18 */
@@ -193,35 +206,47 @@ Medium devices (640px and larger)
   #hero span {
     display: block;
   }
-  .col-md-6 {
-    width: 50%;
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
   [class*="col-"] {
     float: left;
     padding-right: 10px;
     padding-left: 10px;
   }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  .col-md-6 {
+    width: 50%;
   }
-
+  #about_page h3, h4, p {
+    margin-top: 0;
   }
+}
 
 
 /* ==============================
-Large devices (1024px or larger)
+Large devices (1024px or larger) - laptop
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  header img {
+    width: 20%;
+  }
+  .col-md-7 {
+    width: 60%;
+  }
+  .col-md-5 {
+    width: 40%;
+  }
 }
 /* ==============================
-X-large devices (1440px or larger)
+X-large devices (1440px or larger) - desktop
 ================================= */
 @media only screen and (min-width: 1440px) {
 }
 /* ==============================
-Extra-large devices (1920px or larger)-like my cinema display
+Extra-large devices (1920px or larger)- cinema display
 ================================= */
 @media only screen and (min-width: 1920px) {
 }
