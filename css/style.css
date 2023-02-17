@@ -25,11 +25,11 @@ body {
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #000000;
+    text-align: left;
   }
   
   h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
-    color:#cccc33;
     line-height: 1.4;
   }
   h1 {
@@ -39,15 +39,18 @@ body {
   }
   
   h2 {
+    color:#cccc33;
     font-size: 2.25em;
     font-weight: 400;
   }
   
   h3 {
+    color:#58595b;
     font-size: 1.75em;
     font-weight: 400;
   }
   h4 {
+    color:#58595b;
     font-size: 1.35em;
     font-weight: 400;
   }
@@ -157,7 +160,7 @@ body {
   }
   #hero {
     background-color: rgba(204, 204, 51, 0.3);    /* creates a space above */
-    padding: 20px 0;     /* removes white space above h1 */
+    padding: 10px 0;     /* removes white space above h1 */
     display: inline-block;
     width: 100%;
     border-top: 3px solid #4a4a4a;   /* used this instead of shadow - generator link didn't work */
@@ -181,7 +184,10 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
   main {
-      padding-top: 99px;
+    padding-top: 200px;
+  }
+  header img {
+    width: 20%;
   }
   body {
     font-size: 18px; /* changes from 16 to 18 */
