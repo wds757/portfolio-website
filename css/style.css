@@ -30,7 +30,7 @@ body {
   
   h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
-    line-height: 1.4;
+    line-height: 1.0;
   }
   h1 {
     color:#58595b;
@@ -53,6 +53,20 @@ body {
     color:#58595b;
     font-size: 1.35em;
     font-weight: 400;
+  }
+  h5 {  /* this is for the UX participant quotes */
+    color:#58595b;
+    background-color: rgb(204, 204, 51);
+    font-size: 1.35em;
+    font-weight: 600;
+    text-align: center;
+  }
+  h6 {  /* this is for the UX participant names */
+    color:#58595b;
+    background-color: rgb(204, 204, 51);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
   }
 
 /* Hyperlink Styling */ 
@@ -119,7 +133,7 @@ body {
   header {  /* adds background and padding of nav bar */
     background-color: #020202;
     text-align: center;
-    padding: 10px 10;  
+    padding: 10px 0;  
     position:fixed;  /* freezes top header area while scrolling - works with shadow effect if using */
     width: 100%;
   }
@@ -222,6 +236,9 @@ Medium devices (640px and larger) - tablets
   #about_page h3, h4, p {
     margin-top: 0;
   }
+  h2 {
+    text-align: center;
+  }
 }
 
 
@@ -233,11 +250,19 @@ Large devices (1024px or larger) - laptop
   header img {
     width: 20%;
   }
-  .col-md-7 {
-    width: 60%;
+  .col-lg-7 {
+    width: 58.33%;
   }
-  .col-md-5 {
-    width: 40%;
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  h2 {
+    text-align: left;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /* ==============================
