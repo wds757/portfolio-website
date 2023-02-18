@@ -77,7 +77,7 @@ body {
   }
 
     a:visited { /* visited link - purple*/
-      color: #8f2ff0;
+      color:#0e9236;
     }
 
     a:hover,
@@ -94,20 +94,24 @@ body {
       width: 100%;
           }
 
-/* button styling */
-  .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #cccc33;
-    color: #ffffff; /* needed to override the default link color - how to keep white if visited? */
-    font-weight: 600;
-    padding: 10px;
-    border-radius: 8px;
-    transition: 0.2s opacity;
+/* button styling with CSS transitions */
+.button {
+  display: inline-block;
+  background-color: #cccc33;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  transition-duration: 0.2s;  /* CSS transitions */
+  transition: 0.2s opacity;  /* CSS transitions */
   }
   .button:hover {
     opacity: 0.7; /* Reduces the opacity of the button to 70% */
     text-decoration: none;
   }
+  
+
 
   /* Layout styling */
 
