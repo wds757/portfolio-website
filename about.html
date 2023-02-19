@@ -4,171 +4,145 @@
     <meta charset="utf-8">
     <meta name="author" content="Holly Wolfe">
     <meta name="description" content="This is the about page of my website">
-
-    <!--ensures that each version of your page will show correctly on all devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--must be above css file on each html page - affects browser rendering-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-    <!--links css file to each html page-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/fav/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <!--links Oswald fonts for headings to each html page-->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!--links Hind Siliguri font for body to each html page-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600&display=swap" rel="stylesheet">
-
-      <!--For the favicon generated in real favicon generator-->
-      <link href="img/branding/favicon.png" rel="shortcut icon">
-
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-      <link rel="manifest" href="/site.webmanifest">
-      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-      <meta name="msapplication-TileColor" content="#cccc33">
-      <meta name="theme-color" content="#cccc33">
-
-
-<!--For the page title-->
+    
     <title>About Holly Wolfe</title>
   </head>
-
-  <body id="about_page">
-    
-<!--For the header-->
-      <header>
-        <div id="header">
-        <div class="container"> <!--sets width for entire page-->
-
-<!--For the navigation-->
-        <div id="navigation">
-          <div class="container">
-          <img src="img/branding/wds-logo-white-382@1200.png" alt="Wolfe Design Studio Logo" id="logo">
-  
-             </div>
+  <body id="index-page">
+    <!-- For the header -->
+	<header>
+		<!-- For the navigation -->
+		<div class="container">
+            <a href="index.html">
+			 <img src="img/brand/logo.png" class="logo" alt="Logo" >
+            </a>
             <nav>
-            <ul class="navigation">
+              <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="about.html">About</a></li>
                 <li><a href="ux-project-ww.html">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul>
+              </ul>
             </nav>
-          </div>
+		</div>
+	</header>
+
+
+    <main>
+        <!-- For the hero section -->
+        <div id="hero" style="margin-bottom: 40px;">
+            <div class="container">
+                <h1>About</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
         </div>
-      </div>
-      </header>
-
-<main>
-
-<!--For the page heading - or hero - section-->
-
-      <h1>About</h1>
-
-<!--For the profile image section-->
-<div>
-    <picture>
-      <source srcset="img/about/holly-448@300px.png" media="(max-width:767px)">
-      <img src="img/about/holly-448@600px.png" alt="Holly Wolfe">
-    </picture>
-  </div>
-
-
-<!--For the story with heading section-->
-
-      <!-- open row that holds (2) columns for project -->
-      <div class="row">     <!-- see green box in 1.4 example -->
-
-      <!-- open first column (used for story and button) -->
-      <div class="col-md-6 col-lg-7">  <!-- 50/50 for med 6 col or 70/30 for lg 7, columns - see teal boxes in 1.4 example -->
-
-<h2>My Story</h2>
-            <h4>Where are you based?</h4>
-            <p>I am currently living in Virginia.</p>
-            
-            <h4>How do you spend your free time?</h4>
-            <p>I love spending time outdoors with friends and family - hiking, kayaking and exploring different parks for the scenery and wildlife experiences.  When at home, I enjoy caring for my indoor plants and gardens, playing games, and just hanging out with my friends.</p>
-            
-            <h4>What’s a fun fact about you?</h4>
-            <p>I used to help with wildlife rehabilitation and also volunteered at the zoo. Learning how to care for all the different species was amazing. The best part was getting to pet rhinos and getting to see their different personalities. </p>   
-            
-            <h4>What’s your professional experience?</h4>
-            <p>I earned my Bachelor of Science degree (Cum Laude) in Graphic Design at LaRoche University outside of Pittsburgh, PA. Surprisingly one of the classes I enjoyed the most was psychology--recognizing how design affects human thoughts and feelings amazed me.</p> 
-            <p>After college, I started as an intern with the Society of Automotive Engineers and within seven years worked my way up to be Team Lead of the Aerospace group with three direct reports. I managed all the projects that came through for our team. One of the projects was quarterly Aerospace Engineering magazine. When my husband needed to move for his job, they put me under contract to remotely manage and produce the magazine while working with the editor.</p>             
-            <p>Once in Virginia, this gave me a opportunity to start my own business and Wolfe Design Studio was established. The business was built through networking and referrals. I've had many clients for over 10 years each. As a freelancer, I got to work on numerous types of design projects. I helped companies establish and grow their branding with marketing communication pieces and website design. I've also had the privilege to work with many marketing consultants, writers, and web developers to offer complete agency packages. The favorite part of what I do is having the opportunity to work with a variety of industries and businesses, but mostly getting to help a diverse group of owners grow their businesses to the next level.</p>            
-            <p>I've coordinated hundreds of projects between multiple clients and industries. In addition to collaborating with clients, client teams, sub-contractors, and vendors, as well as designing, I've always managed to meet tight deadlines. Because of this, I feel product management would be a natural fit and next step.</p>
-            
-            <h4>Why do you think having UX and frontend development skills is valuable for product management?</h4>
-            <p>Knowing the end-to-end process is essential. Getting to work with the stake holders and hearing the strategy and limitations behind the project sets the foundation for the next step. Understanding the end user and researching what works best for them helps in designing experiences that they enjoy. Knowing how to test features and establish visual consistency also creates an end product that the user is happy with. Understanding how to communicate with product developers is key to help it all come together.</p>
-    </div>
-  </div>
-
-
-  <div>
-<!--For the CV-resume link to open in new window-->
-<!--adding button class to html pages -->
-<a href="files/resume-cv-wolfe-holly.pdf" target="_blank" class="button">Download my CV</a>
-  </div><!--Closes column 1 - col-md-7 -->
-
-<!--Column for the lists for skill and tools w headings section-->
-
-      <!-- open second column (used for skills and tools) -->
-      <div class="col-md-6 col-lg-5">  <!-- 50/50 for med 6 col or 70/30 for lg 5, columns - see teal boxes in 1.4 example -->
-
-<h2>Skills & Tools</h2>
-
-<h3>Skills</h3>  
-<p>user centered, customer focus, user research, user interviewing, affinity mapping, surveys, card sorting, user flows, personas, customer journeys, usability testing, ux best practices, wireframing, prototyping, HTML, CSS, JavaScript</p>
-
-<h3>Tools</h3>   
-<p>Figma, UX Research Tools, InDesign, Photoshop, Illustrator, Acrobat Pro, Premier Rush, Photography, Adobe XD</p>
-
-</div><!--Closes row 1 - and closes column 2 -->
-
-</main>
+        <div class="container">
+            <div><!--For the image, My Story and Skills and tools sections-->
+                <div>
+                    <div><!--For My Story and Skills and tools sections-->
+                        <div class="column col-lg-7"><!--Column one-->
+                            <h2>My Story</h2>
+                            <picture style="float: right; width: 50%; padding-left: 20px;"><!--For students, the images below should be updated with real images-->
+                              <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
+                              <img src="http://via.placeholder.com/1200x800" alt="My Image">
+                            </picture>
+                            <h3>Where are you based?</h3>
+                            <p>I am currently living in Virginia.</p>
+                            <h3>How do you spend your free time?</h3>
+                            <p>I love spending time outdoors with friends and family - hiking, kayaking and exploring different parks for the scenery and wildlife experiences.  When at home, I enjoy caring for my indoor plants and gardens, playing games, and just hanging out with my friends.</p>
+                            <h3>What’s a fun fact about you?</h3>
+                            <p>I used to help with wildlife rehabilitation and also volunteered at the zoo. Learning how to care for all the different species was amazing. The best part was getting to pet rhinos and getting to see their different personalities.</p>
+                            <!--
+                            <h3>What’s your professional experience?</h3>
+                            <p>I earned my Bachelor of Science degree (Cum Laude) in Graphic Design at LaRoche University outside of Pittsburgh, PA. Surprisingly one of the classes I enjoyed the most was psychology--recognizing how design affects human thoughts and feelings amazed me.</p> 
+                            <p>After college, I started as an intern with the Society of Automotive Engineers and within seven years worked my way up to be Team Lead of the Aerospace group with three direct reports. I managed all the projects that came through for our team. One of the projects was quarterly Aerospace Engineering magazine. When my husband needed to move for his job, they put me under contract to remotely manage and produce the magazine while working with the editor.</p>             
+                            <p>Once in Virginia, this gave me a opportunity to start my own business and Wolfe Design Studio was established. The business was built through networking and referrals. I've had many clients for over 10 years each. As a freelancer, I got to work on numerous types of design projects. I helped companies establish and grow their branding with marketing communication pieces and website design. I've also had the privilege to work with many marketing consultants, writers, and web developers to offer complete agency packages. The favorite part of what I do is having the opportunity to work with a variety of industries and businesses, but mostly getting to help a diverse group of owners grow their businesses to the next level.</p>            
+                            <p>I've coordinated hundreds of projects between multiple clients and industries. In addition to collaborating with clients, client teams, sub-contractors, and vendors, as well as designing, I've always managed to meet tight deadlines. Because of this, I feel product management would be a natural fit and next step.</p>
+                            <h3>Why do you think having UX and frontend development skills is valuable for product management?</h3>
+                            <p>Knowing the end-to-end process is essential. Getting to work with the stake holders and hearing the strategy and limitations behind the project sets the foundation for the next step. Understanding the end user and researching what works best for them helps in designing experiences that they enjoy. Knowing how to test features and establish visual consistency also creates an end product that the user is happy with. Understanding how to communicate with product developers is key to help it all come together.</p>
+                            -->
+                            
+                        </div>
+                        <div class="column col-lg-8"><!--Column two-->
+                            <h2>Skills &amp; Tools</h2>
+                            <div class="column col-md-6"><!--Column two, row one-->
+                                <h3>Skills</h3>
+                                <ul>
+                                        <li>User centered</li>
+                                        <li>Customer focus</li>
+                                        <li>User research</li>
+                                        <li>User interviewing</li>
+                                        <li>Affinity mapping</li>
+                                    </ul>
+                            </div>
+                            <div class="column col-md-6"><!--Column two, row two-->
+                                <h3>Tools</h3>
+                                <ul>
+                                        <li>Figma</li>
+                                        <li>UX Research Tools</li>
+                                        <li>InDesign</li>
+                                        <li>Photoshop</li>
+                                        <li>Illustrator</li>
+                                    </ul>
+                            </div>
+                            <div class="center"><a href="#" target="_blank" class="button secondary">Download my CV</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
-<!--For the footer-->
-<footer id="contact">
-  <div class="container">
-    <h2>Get in Touch</h2>
-    <p>Looking for opportunities to collaborate on improving user interactions and customer experiences!
-      Please get in touch. Click the link below to email me your questions.
-    </p>
-    <div>
-      <!--adding button class to html pages - need to change color?-->
-      <a href="mailto:wolfedesignstudio@gmail.com" class="button">Email me</a>
-  </div>
-
-  <div>
-
-<!--For social media icons-->
-      <a href="Linkedin-URL" target="_blank">
-        <!--copied from -->
-        <svg id="Capa_1" style="enable-background:new 0 0 112.196 112.196;" version="1.1" viewBox="0 0 112.196 112.196" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle cx="56.098" cy="56.097" r="56.098" style="fill:#007AB9;"/><g><path d="M89.616,60.611v23.128H76.207V62.161c0-5.418-1.936-9.118-6.791-9.118    c-3.705,0-5.906,2.491-6.878,4.903c-0.353,0.862-0.444,2.059-0.444,3.268v22.524H48.684c0,0,0.18-36.546,0-40.329h13.411v5.715    c-0.027,0.045-0.065,0.089-0.089,0.132h0.089v-0.132c1.782-2.742,4.96-6.662,12.085-6.662    C83.002,42.462,89.616,48.226,89.616,60.611L89.616,60.611z M34.656,23.969c-4.587,0-7.588,3.011-7.588,6.967    c0,3.872,2.914,6.97,7.412,6.97h0.087c4.677,0,7.585-3.098,7.585-6.97C42.063,26.98,39.244,23.969,34.656,23.969L34.656,23.969z     M27.865,83.739H41.27V43.409H27.865V83.739z" style="fill:#F1F2F2;"/></g></g><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg>
-      </a>
-
-      <a href="Instagram-URL" target="_blank">
-        <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
-          .st0{fill:url(#SVGID_1_);}
-          .st1{fill:#FFFFFF;}
-        </style><g><radialGradient cx="225.4737" cy="222.8046" gradientTransform="matrix(14.2175 0 0 14.2171 -3055.7039 -2615.9958)" gradientUnits="userSpaceOnUse" id="SVGID_1_" r="47.7212"><stop offset="9.693880e-02" style="stop-color:#FFD87A"/><stop offset="0.1426" style="stop-color:#FCCE78"/><stop offset="0.2263" style="stop-color:#F5B471"/><stop offset="0.3378" style="stop-color:#EB8D65"/><stop offset="0.449" style="stop-color:#E36058"/><stop offset="0.6786" style="stop-color:#CD3694"/><stop offset="1" style="stop-color:#6668B0"/></radialGradient><path class="st0" d="M512,395.1c0,64.6-52.3,116.9-116.9,116.9H116.9C52.3,512,0,459.7,0,395.1V117C0,52.4,52.4,0,117,0h276.3   C458.9,0,512,53.1,512,118.7V395.1z"/><g><path class="st1" d="M327.2,70.6H184.8c-63.1,0-114.3,51.2-114.3,114.3v142.3c0,63.1,51.1,114.2,114.3,114.2h142.3    c63.1,0,114.2-51.1,114.2-114.2V184.9C441.4,121.7,390.3,70.6,327.2,70.6z M405.8,313.5c0,51-41.3,92.3-92.3,92.3h-115    c-51,0-92.3-41.3-92.3-92.3v-115c0-51,41.3-92.3,92.3-92.3h115c51,0,92.3,41.4,92.3,92.3V313.5z"/><path class="st1" d="M261,159c-54,0-97.7,43.7-97.7,97.7c0,53.9,43.7,97.7,97.7,97.7c53.9,0,97.7-43.7,97.7-97.7    C358.6,202.7,314.9,159,261,159z M261,315.4c-32.5,0-58.8-26.3-58.8-58.8c0-32.5,26.3-58.8,58.8-58.8c32.4,0,58.8,26.3,58.8,58.8    C319.7,289.1,293.4,315.4,261,315.4z"/><path class="st1" d="M376.7,157.5c0,13.7-11.1,24.8-24.8,24.8c-13.7,0-24.8-11.1-24.8-24.8c0-13.7,11.1-24.9,24.8-24.9    C365.6,132.6,376.7,143.7,376.7,157.5z"/></g></g></svg>
-      </a>
-  </div>
-
-  <div>
-    <p>Copyright 2023 Wolfe Design Studio</p>
-  </div>
-</div>
-</footer>
-
-
-</body>
+<!-- For the footer  -->
+	<footer id="contact" style="clear: both;">
+		<div class="container">
+            <h2>Get in touch</h2>
+            <p>Looking for opportunities to collaborate on improving user interactions and customer experiences! Click the link below to email me a time that works for you.</p> 
+            <div>
+                <a href="mailto:office@careerfoundry.com" class="button contact">Email me</a>
+            </div>
+            <ul class="social">
+            <!--Social Media Layout and Placeholders-->
+            <!--For students, the images below should be updated with real svgs and links should be updated-->
+                <li>
+                    <a href="LINKEDIN-URL" target="_blank">
+                        <img src="http://via.placeholder.com/32x32" alt="LinkedIn">
+                    </a>
+                </li>
+                <li>
+                    <a href="TWITTER-URL" target="_blank">
+                        <img src="http://via.placeholder.com/32x32" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="ANOTHER-SOCIAL-LINK">
+                        <img src="http://via.placeholder.com/32x32" alt="Social">
+                    </a>
+                </li>
+                <li>
+                    <a href="ANOTHER-SOCIAL-LINK">
+                        <img src="http://via.placeholder.com/32x32" alt="Social">
+                    </a>
+                </li>
+            </ul>
+            <p>Copyright 2023 Wolfe Design Studio</p>
+        </div>
+        
+	</footer>
+  </body>
 </html>

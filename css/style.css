@@ -1,282 +1,351 @@
-/*
-Colors used:
-Primary Color (Green): #cccc33;  rgba(204, 204, 51, 0.08); (80% green) or  rgba(204, 204, 51, 0.3) 30%
-Secondary Color (Gray): #58595b; 88,89,91,0.50 (50% gray)
-Black: 
+/*-------------------------------------------Start Section---------------------------------------------*/
 
-copied from google fonts
-#myheadings
-font-family: 'Oswald', sans-serif;
-#mybody
-font-family: 'Hind Siliguri', sans-serif;
-*/
+/*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
+* {
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*default body settings*/
+
+body {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
 
 h1 {
-    font-family: 'Oswald', sans-serif;
+  font-size: 2.75em;
+  font-weight: 700;
 }
 
-body {
-    font-family: 'Hind Siliguri', sans-serif;
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
 }
-body {
-    background-color: rgba(204, 204, 51, 0.08);
-    font-family: 'Hind Siliguri', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #000000;
-    text-align: left;
-  }
-  
-  h2, h3, h4 {
-    font-family: 'Oswald', sans-serif;
-    line-height: 1.0;
-  }
-  h1 {
-    color:#58595b;
-    font-size: 2.75em;
-    font-weight: 600;
-  }
-  
-  h2 {
-    color:#cccc33;
-    font-size: 2.25em;
-    font-weight: 400;
-  }
-  
-  h3 {
-    color:#58595b;
-    font-size: 1.75em;
-    font-weight: 400;
-  }
-  h4 {
-    color:#58595b;
-    font-size: 1.35em;
-    font-weight: 400;
-  }
-  h5 {  /* this is for the UX participant quotes */
-    color:#58595b;
-    background-color: rgb(204, 204, 51);
-    font-size: 1.35em;
-    font-weight: 600;
-    text-align: center;
-  }
-  h6 {  /* this is for the UX participant names */
-    color:#58595b;
-    background-color: rgb(204, 204, 51);
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-  }
 
-/* Hyperlink Styling */ 
+h3 {
+  font-size: 1.35em;
+  font-weight: 400;
+  margin-top: -8px;
+  margin-bottom: -8px;
+}
 
-  a {
-    color: #0e9236;  /* normal state - dark green*/
-    text-decoration: none; /* No underlining */
-  }
+#about-page h3 { margin-top: 0;}
 
-    a:visited { /* visited link - purple*/
-      color:#0e9236;
-    }
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
 
-    a:hover,
-    a:focus {  /* focus & hover for mobile - red*/
-      color: #ef4305;
-      text-decoration: underline; /* Underlining when hovering over a link */
-    }
 
-    a:active { /* selected link - blue*/
-      color: #303e99;
-    }
+/*setting images to full-width*/
+img {
+  width: 100%;
+}
 
-    img{
-      width: 100%;
-          }
+/*change the default link color to your primary color (copied from your comments at the top of the document)*/
+a {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #cc6540;
+  text-decoration: none; /* Underlining when hovering over a link */
+}
 
-/* button styling with CSS transitions */
+/*style the current nav item green*/
+.active a {
+    color: green;
+    text-decoration: underline;
+}
+
+a:active { /* selected link */
+  color: green;
+}
+
+/*Pseudo classes for Accessibility for Across the Web*/
+a:hover,
+a:focus {
+  color: green;
+  text-decoration: none;
+}
+
+
+/*CSS code for the button class*/
 .button {
   display: inline-block;
-  background-color: #cccc33;
+  background-color: #ff7f50;
   color: white;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  transition-duration: 0.2s;  /* CSS transitions */
-  transition: 0.2s opacity;  /* CSS transitions */
-  }
-  .button:hover {
-    opacity: 0.7; /* Reduces the opacity of the button to 70% */
-    text-decoration: none;
-  }
-  
-
-
-  /* Layout styling */
-
-  .container {
-    padding: 0 15px;    /* overall page padding or margin */
-  }
-  .row {
-    margin: 25px 0px; /* 25px top and bottom, 0 left and right - right side goes to 0?? */
-  }
-  #work .row {
-    padding-bottom: 25px; 
-    border-bottom: 1px solid #4a4a4a; /* adds rule after button */
-  }
-  #logo {
-    max-width: 250px; /* keeps logo to max width for different screen views - changed DOT to HashTag */
-  }
-  #hero {
-    text-align: center; /* Centers text in hero sections */
-  }
-
-/* Layout-navigation styling */
-
-  header {  /* adds background and padding of nav bar */
-    background-color: #020202;
-    text-align: center;
-    padding: 10px 0;  
-    position:fixed;  /* freezes top header area while scrolling - works with shadow effect if using */
-    width: 100%;
-  }
-  nav > ul {  /* selects unordered lists within the nav element */
-    list-style-type: none;
-    padding: 0; 
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #000000;   
-  }
-  /* selects list elements in unordered lists within the nav element (nav>ul>li) add a:visited etc, to change button states */
-  nav > ul > li {  
-    padding: 0 8px;
-    display: inline; 
-    width: 100%;
-  }
-  /* selects links that are list elements in unordered lists within the nav element & adds padding around each word or link - then add to a;visited, :hover, :active states*/
-  nav > ul > li > a:visited {   
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #cccc33; 
-  }
-  nav > ul > li > a:hover {   
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #e2e2e2; 
-  }
-  nav > ul > li > a:active { 
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 600;  
-    color: #1937fe; 
-  }
-  #hero {
-    background-color: rgba(204, 204, 51, 0.3);    /* creates a space above */
-    padding: 10px 0;     /* removes white space above h1 */
-    display: inline-block;
-    width: 100%;
-/* used line instead (took out) of shadow - generator link didn't work */
+  border-bottom: 2px solid #994c30;
+  transition: 0.8s opacity;
 }
-main {
-  padding-top: 200px;
+
+.button:hover {
+  opacity: 0.8;
+  color: #ffffff;
+  background-color: green;
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
 }
 
 
-  /* added the sizes below from w3schools.com responsive columns
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}    */
+/*button rules for the mailto button*/
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+  transition: 0.8s opacity;
+}
+
+/*button class hover and active state*/
+
+.button.contact:hover {
+  opacity: 0.8;
+  background-color: green;
+  color: #ffffff;
+}
+
+.button.contact:active {
+  opacity: 0.8;
+  background-color: green;
+  color: #ffffff;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*stye the page sections*/
+
+/*style the <header> element*/
+header {
+  background-color: #ffe4c4;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+/*style the logo*/
+header .logo {
+  max-width: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*Navigation Styling*/
+nav {
+  display: inline-block;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 40px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero span {
+  display: block;
+}
+
+#contact {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/*Style the social icons*/
+.social {
+  list-style-type: none;
+  padding: 0;
+  margin-left: -10px;
+}
+
+.social li {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.social img {
+  height: 32px;
+  width: 32px;
+}
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 20px; }
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*SVG anamation*/
+.svg-animation {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/*single line...
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+*/
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/*single line...
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+*/
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*Media Queries*/
+
+/*clear page flow*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*float all columns left*/
+[class*="col-"] {
+  padding: 10px;
+}
 
 /* ==============================
-Medium devices (640px and larger) - tablets
+Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  header {
-    text-align: unset; 
-    padding: 20px 0 0 13px;
+  body {
+    font-size: 18px;
   }
+    
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
   }
-  main {
-    padding-top: 200px;
-  }
-  header img {
-    width: 30%;
-  }
-  body {
-    font-size: 18px; /* changes from 16 to 18 */
-  }
-  #hero span {
-    display: block;
-  }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  [class*="col-"] {
-    float: left;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
+    
   .col-md-6 {
     width: 50%;
+    float: left;
+    padding-bottom: 40px;
   }
-  #about_page h3, h4, p {
-    margin-top: 0;
-  }
-  h2 {
-    text-align: center;
-  }
+    
 }
 
 
 /* ==============================
-Large devices (1024px or larger) - laptop
+Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
-  header img {
-    width: 20%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  h2 {
-    text-align: left;
-  }
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
-}
-/* ==============================
-X-large devices (1440px or larger) - desktop
-================================= */
-@media only screen and (min-width: 1440px) {
-}
-/* ==============================
-Extra-large devices (1920px or larger)- cinema display
-================================= */
-@media only screen and (min-width: 1920px) {
-}
+  .col-lg-7 {
+    width: 60%;
+  }
 
+  .col-lg-5 {
+    width: 40%;
+  }
+    
+  .col-lg-7 {
+    width: 60%;
+    float: left;
+    padding-bottom: 40px;
+  }
+  .col-lg-8 {
+    width: 40%;
+    float: right;
+  }
+    
+   #about-page .col-md-6 {
+     width: 100%;
+  }
+}
