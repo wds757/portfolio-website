@@ -297,6 +297,23 @@ main {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 /*--------------------------------------------End Section---------------------------------------------*/
+
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*add styles for project pages*/
+
+/*Background color behind h1s
+#uxproject-page h1{
+  background-color: #cccc3365;
+  padding: 40px 0;
+  display: inline-block;
+  width: 100%;
+}
+*/
+/*Quote styles*/
+
+
+/*--------------------------------------------End Section---------------------------------------------*/
+
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*Media Queries*/
 
