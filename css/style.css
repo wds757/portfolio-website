@@ -1,3 +1,17 @@
+/*
+Colors used:
+Primary Color (Green): #cccc33;  rgba(204, 204, 51, 0.08); (80% green) or  rgba(204, 204, 51, 0.3) 30%
+Secondary Color (Gray): #58595b; 88,89,91,0.50 (50% gray)
+Black: 
+
+copied from google fonts
+#myheadings
+font-family: 'Oswald', sans-serif;
+#mybody
+font-family: 'Hind Siliguri', sans-serif;
+*/
+
+
 /*-------------------------------------------Start Section---------------------------------------------*/
 
 /*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
@@ -55,7 +69,7 @@ img {
 
 /*change the default link color to your primary color (copied from your comments at the top of the document)*/
 a {
-  color: #ff7f50;
+  color: #cccc33;
   text-decoration: none; /* No underlining */
 }
 a:hover {
@@ -65,8 +79,8 @@ a:hover {
 
 /*style the current nav item green*/
 .active a {
-    color: green;
-    text-decoration: underline;
+    color: rgb(246, 252, 246);
+    text-decoration: none;
 }
 
 a:active { /* selected link */
@@ -84,14 +98,16 @@ a:focus {
 /*CSS code for the button class*/
 .button {
   display: inline-block;
-  background-color: #ff7f50;
+  background-color: #cccc33;
   color: white;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30;
+  border-bottom: 2px solid green;
   transition: 0.8s opacity;
+  transition-duration: 0.2s;  /* CSS transitions */
+  transition: 0.2s opacity;  /* CSS transitions */
 }
 
 .button:hover {
@@ -110,9 +126,9 @@ a:focus {
 /*button rules for the mailto button*/
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
+  color: #040404;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #040404;
   transition: 0.8s opacity;
 }
 
@@ -136,10 +152,11 @@ a:focus {
 
 /*style the <header> element*/
 header {
-  background-color: #ffe4c4;
+  background-color: #030303;
   text-align: center;
   padding: 10px 0;
-  position: relative;
+  position:fixed;  /* freezes top header area while scrolling - works with shadow effect if using */
+  width: 100%;
   box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
@@ -168,11 +185,11 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #ffffff;
 }
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #cccc3365;
   padding: 40px 0;
   display: inline-block;
   width: 100%;
@@ -180,6 +197,10 @@ nav > ul > li > a {
 
 #hero span {
   display: block;
+}
+
+main {
+  padding-top: 150px;
 }
 
 #contact {
@@ -345,7 +366,7 @@ Large devices (1024px or larger)
     float: right;
   }
     
-   #about-page .col-md-6 {
-     width: 100%;
-  }
+  #about-page .col-md-6 {
+    width: 100%;
+ }
 }
