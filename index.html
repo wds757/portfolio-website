@@ -20,22 +20,35 @@
     
     <title>Wolfe Design Studio</title>
   </head>
+
   <body id="index-page">
+  
     <!-- For the header -->
 	<header>
+
+
 		<!-- For the navigation -->
 		<div class="container">
             <a href="index.html">
 			 <img src="img/branding/wds-logo-white-382@1200.png" class="logo" alt="Wolfe Design Studio Logo" >
             </a>
-            <nav>
+
+	            <nav>
               <ul class="navigation">
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="img/home/hamburgerMenu.png"></i></a></li> <!-- For the hamburger menu in mobile -->
               </ul>
-            </nav>
+              </nav>
+	<!-- For the hamburger menu in mobile -->
+  <div class="container">
+    <div class="navtoggle" id="myNavtoggle">
+      <img class="icon" src="img/home/hamburgerMenu.png" alt="hamburgerMenu" >
+            
+      </div>
 		</div>
+      </div>
 	</header>
 
     <main>
@@ -731,7 +744,6 @@
 
             <ul class="social">
             <!--Social Media Layout and Placeholders-->
-            <!--For students, the images below should be updated with real svgs and links should be updated-->
                 <li>
                     <a href="https://www.linkedin.com/in/hollywolfeva" target="_blank">
                         <img src="img/home/social-media-logos-black-linkedin.svg" alt="LinkedIn">

@@ -153,7 +153,6 @@ a:focus {
 /*style the <header> element*/
 header {
   background-color: #030303;
-  text-align: center;
   padding: 10px 0;
   position:fixed;  /* freezes top header area while scrolling - works with shadow effect if using */
   width: 100%;
@@ -162,9 +161,16 @@ header {
 
 /*style the logo*/
 header .logo {
-  max-width: 250px;
+  text-align: left;
+  max-width: 150px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+/*style the hamburger icon*/
+header .icon {
+  text-align: right;
+  height: 32px;
+  width: 32px;
 }
 
 /*Navigation Styling*/
@@ -177,15 +183,15 @@ nav > ul {
   padding: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
-
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #ffffff;
+}
+/* Hides navigation */
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
 #hero {
@@ -342,19 +348,33 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
+  header .logo {
+    min-width: 150px; 
+  }
+
   nav {
     width: auto;
     float: right;
   }
-    
+         
+  nav > ul > li {
+    display: inline-block;
+
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }  
+
+  
   .col-md-6 {
     width: 50%;
     float: left;
     padding-bottom: 40px;
-  }
-    
+  } 
 }
-
 
 /* ==============================
 Large devices (1024px or larger)
@@ -381,9 +401,9 @@ Large devices (1024px or larger)
   .col-lg-8 {
     width: 40%;
     float: right;
-  }
-    
+  }  
+  
   #about-page .col-md-6 {
     width: 100%;
- }
+  }
 }
