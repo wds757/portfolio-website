@@ -189,9 +189,21 @@ nav > ul > li > a {
   font-weight: 700;
   color: #ffffff;
 }
+
 /* Hides navigation */
 .navtoggle li:not(:last-child) {
   display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
 }
 
 #hero {
@@ -359,16 +371,18 @@ Medium devices (640px and larger)
          
   nav > ul > li {
     display: inline-block;
-
+    padding:0 10px;
   }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
+  /*hide hamburger menu*/
   .navtoggle li:last-child {
     display: none;
   }  
 
-  
   .col-md-6 {
     width: 50%;
     float: left;

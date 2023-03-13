@@ -26,12 +26,16 @@
     <!-- For the header -->
 	<header>
 
-
 		<!-- For the navigation -->
 		<div class="container">
             <a href="index.html">
 			 <img src="img/branding/wds-logo-white-382@1200.png" class="logo" alt="Wolfe Design Studio Logo" >
             </a>
+
+    <!-- For the hamburger menu in mobile -->
+  <div class="container">
+    <div class="navtoggle" id="myNavtoggle">
+      <img class="icon" src="img/home/hamburgerMenu.png" alt="hamburgerMenu" >
 
 	            <nav>
               <ul class="navigation">
@@ -41,14 +45,11 @@
                 <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="img/home/hamburgerMenu.png"></i></a></li> <!-- For the hamburger menu in mobile -->
               </ul>
               </nav>
-	<!-- For the hamburger menu in mobile -->
-  <div class="container">
-    <div class="navtoggle" id="myNavtoggle">
-      <img class="icon" src="img/home/hamburgerMenu.png" alt="hamburgerMenu" >
             
-      </div>
-		</div>
-      </div>
+    </div>
+	</div>
+    </div>
+    
 	</header>
 
     <main>
@@ -761,9 +762,11 @@
         
 	</footer>
 
-<!--Beginning of JavaScript-->
+<!--Beginning of JavaScript - load jquery BEFORE scripts-->
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
   <script src="js/scripts.js"></script>
 
   </body>
-</html>
+</html> 
