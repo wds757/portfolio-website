@@ -183,7 +183,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #908f8f;
 }
 
 nav {
@@ -213,7 +213,7 @@ nav {
 }
 
 .navtoggle.responsive nav {
-  background-color: #8a8b8e;
+  background-color: #4c4c4d;
   margin-top: 25px;
   margin-bottom: -51%;
 }
