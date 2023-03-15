@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary Color (Green): #cccc33;  rgba(204, 204, 51, 0.08); (80% green) or  rgba(204, 204, 51, 0.3) 30%
+Primary Color (Green): #cccc33;  rgba(204, 204, 51, 0.08); (80% green) or  rgba(204, 204, 51, 0.3) 30%; 00800 = dark green
 Secondary Color (Gray): #58595b; 88,89,91,0.50 (50% gray)
 Black: 
 
@@ -142,7 +142,7 @@ a:focus {
 
 .button.contact:active {
   opacity: 0.8;
-  background-color: green;
+  background-color: #008000;
   color: #ffffff;
 }
 
@@ -203,7 +203,7 @@ nav {
     display: none;
   }
 
-  /*for javascript connection - navtoggle and responsive*/
+/*for javascript connection - navtoggle and responsive*/
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
@@ -213,7 +213,7 @@ nav {
 }
 
 .navtoggle.responsive nav {
-  background-color: #f2f2f2;
+  background-color: #8a8b8e;
   margin-top: 25px;
   margin-bottom: -51%;
 }
@@ -221,7 +221,7 @@ nav {
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid #cccc33;
 }
 
 .navtoggle.responsive li:last-child  {
