@@ -203,6 +203,7 @@ nav {
     display: none;
   }
 
+  /*for javascript connection - navtoggle and responsive*/
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
