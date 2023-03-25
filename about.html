@@ -1,160 +1,248 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">    
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Holly Wolfe">
-    <meta name="description" content="This is the about page of my website">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="img/branding/favicon.png" rel="shortcut icon">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="author" content="Holly Wolfe" />
+    <meta name="description" content="This is the about page of my website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="img/branding/favicon.png" rel="shortcut icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <title>About</title>
   </head>
 
   <body id="about-page">
-
     <!-- For the header -->
     <header>
-        <!-- For the navigation -->
-        <div class="container">
-                <div class="navtoggle" id="myNavtoggle">
-                    <a href="index.html">
-                     <img src="img/branding/wds-logo-white-382@1200.png" class="logo" alt="Logo" >
-                    </a>
-                    <nav>
-                      <ul class="navigation">
-                        <li class="active"><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
-                        <li>
-                            <p id="click_advance">
-                                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
-                                <img src="img/home/hamburgerMenu.png">
-                                </a>
-                            </p>
-                        </li>
-                      </ul>
-                    </nav>
-                </div>
+      <!-- For the navigation -->
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html">
+            <img
+              src="img/branding/wds-logo-white-382@1200.png"
+              class="logo"
+              alt="Logo"
+            />
+          </a>
+          <nav>
+            <ul class="navigation">
+              <li class="active"><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+              <li>
+                <p id="click_advance">
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="menuToggle()"
+                  >
+                    <img src="img/home/hamburgerMenu.png" />
+                  </a>
+                </p>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </header>
-
+      </div>
+    </header>
 
     <main>
-        <!-- For the hero section -->
-        <div id="hero" style="margin-bottom: 40px;">
-            <div class="container">
-                <h1>About</h1>
-                <p>
-                    Excited to transition to a full time position so I can focus my energy on the success of one company and collaborate with a great team. Positively embracing change and learning opportunities with a growth mindset!
-                </p>
-            </div>
-        </div>
+      <!-- For the hero section -->
+      <div id="hero" style="margin-bottom: 40px">
         <div class="container">
-            <div><!--For the image, My Story and Skills and tools sections-->
-                <div>
-                    <div><!--For My Story and Skills and tools sections-->
-                        <div class="column col-lg-7"><!--Column one-->
-
-                            <h2>My Story</h2>
-                            <picture style="float: right; width: 50%; padding-left: 20px;">
-                              <source srcset="img/about/holly-448@300px.png" media="(max-width:767px)">
-                              <img src="img/about/holly-448@600px.png" alt="Holly Wolfe">
-                            </picture>
-
-                            <h3>Where are you based?</h3>
-                            <p>I currently live in Virginia.</p>
-                            <h3>How do you spend your free time?</h3>
-                            <p>I love spending time outdoors with family - hiking, kayaking and exploring different parks.  I also enjoy caring for my indoor plants, playing games, and having fun with friends.</p>
-                            <h3>What’s a fun fact about you?</h3>
-                            <p>I used to help with wildlife rehabilitation and also volunteered at the zoo. Learning how to care for all the different species was amazing. The best part was getting to pet rhinos and getting to see their different personalities.</p>
-                            <h3>What’s your professional experience?</h3>
-                            <p>While earning my BS in Graphic Design, the classes I enjoyed the most were psychology based--recognizing how design affects human thoughts and feelings amazed me.</p> 
-                            <p>After college, I started as an intern with the Society of Automotive Engineers and worked my way up to be the Aerospace Team with three direct reports. I managed all the projects that came through for our team. One of the projects was the bimonthly Aerospace Engineering magazine. When my husband needed to move for his job, they put me under contract to remotely manage and produce the magazine while working with the editor.</p>             
-                            <p>Once in Virginia, this gave me a opportunity to start my own business and Wolfe Design Studio was established. The business was built through networking and referrals. I've had many clients for over 10 years each. As a freelancer, I got to work on numerous types of design projects. I helped companies establish and grow their branding with marketing communication pieces and website design. I've also had the privilege to work with many marketing consultants, writers, and web developers to offer complete agency packages. The favorite part of what I do is having the opportunity to work with a variety of industries and businesses, but mostly getting to help a diverse group of owners grow their businesses to the next level.</p>            
-                          
-                          <!--  <p>I've coordinated hundreds of projects between multiple clients and industries. In addition to collaborating with clients, client teams, sub-contractors, and vendors, as well as designing, I've always managed to meet tight deadlines. Because of this, I feel product management would be a natural fit and next step. Knowing the end-to-end process is essential. Getting to work with the stakeholders and hearing the strategy and limitations behind the project sets the foundation for the next step. Understanding the end user and researching what works best for them helps in designing experiences that they enjoy. Knowing how to test features and establish visual consistency also creates an end product that the user is happy with. Understanding how to communicate with product developers is key to help it all come together.</p>
-                        -->
-                            
-                        </div>
-                        <div class="column col-lg-8"><!--Column two-->
-                            <h2>Skills &amp; Tools</h2>
-                            <div class="column col-md-6"><!--Column two, row one-->
-                                <h4>Skills</h4>
-                                <ul>
-                                        <li>User centered design</li>
-                                        <li>Customer experience</li>
-                                        <li>User research</li>
-                                        <li>User interviewing</li>
-                                        <li>Usability testing</li>
-                                        <li>Project manage</li>
-                                    </ul>
-                            </div>
-                            <div class="column col-md-6"><!--Column two, row two-->
-                                <h4>Tools</h4>
-                                <ul>
-                                        <li>Figma</li>
-                                        <li>UX Research Tools</li>
-                                        <li>Adobe Photoshop</li>
-                                        <li>Adobe Illustrator</li>
-                                        <li>Adobe Premier Rush</li>
-                                        <li>Adobe InDesign</li>
-                                    </ul>
-                            </div>
-                            <div class="center"><a href="files/resume-cv-wolfe-holly.pdf" target="_blank" class="button secondary">Download my CV</a></div>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <h1>About</h1>
+          <p>
+            Excited to transition to a full time position so I can focus my
+            energy on the success of one company and collaborate with a great
+            team. Positively embracing change and learning opportunities with a
+            growth mindset!
+          </p>
         </div>
+      </div>
+      <div class="container">
+        <div>
+          <!--For the image, My Story and Skills and tools sections-->
+          <div>
+            <div>
+              <!--For My Story and Skills and tools sections-->
+              <div class="column col-lg-7">
+                <!--Column one-->
+
+                <h2>My Story</h2>
+                <picture style="float: right; width: 50%; padding-left: 20px">
+                  <source
+                    srcset="img/about/holly-448@300px.png"
+                    media="(max-width:767px)"
+                  />
+                  <img src="img/about/holly-448@600px.png" alt="Holly Wolfe" />
+                </picture>
+
+                <h3>Where are you based?</h3>
+                <p>I currently live in Virginia.</p>
+                <h3>How do you spend your free time?</h3>
+                <p>
+                  I love spending time outdoors with family - hiking, kayaking
+                  and exploring different parks. I also enjoy caring for my
+                  indoor plants, playing games, and having fun with friends.
+                </p>
+                <h3>What’s a fun fact about you?</h3>
+                <p>
+                  I used to help with wildlife rehabilitation and also
+                  volunteered at the zoo. Learning how to care for all the
+                  different species was amazing. The best part was getting to
+                  pet rhinos and getting to see their different personalities.
+                </p>
+                <h3>What’s your professional experience?</h3>
+                <p>
+                  While earning my BS in Graphic Design, the classes I enjoyed
+                  the most were psychology based--recognizing how design affects
+                  human thoughts and feelings amazed me.
+                </p>
+                <p>
+                  After college, I started as an intern with the Society of
+                  Automotive Engineers and worked my way up to be the Aerospace
+                  Team with three direct reports. I managed all the projects
+                  that came through for our team. One of the projects was the
+                  bimonthly Aerospace Engineering magazine. When my husband
+                  needed to move for his job, they put me under contract to
+                  remotely manage and produce the magazine while working with
+                  the editor.
+                </p>
+                <p>
+                  Once in Virginia, this gave me a opportunity to start my own
+                  business and Wolfe Design Studio was established. The business
+                  was built through networking and referrals. I've had many
+                  clients for over 10 years each. As a freelancer, I got to work
+                  on numerous types of design projects. I helped companies
+                  establish and grow their branding with marketing communication
+                  pieces and website design. I've also had the privilege to work
+                  with many marketing consultants, writers, and web developers
+                  to offer complete agency packages. The favorite part of what I
+                  do is having the opportunity to work with a variety of
+                  industries and businesses, but mostly getting to help a
+                  diverse group of owners grow their businesses to the next
+                  level.
+                </p>
+
+                <!--  <p>I've coordinated hundreds of projects between multiple clients and industries. In addition to collaborating with clients, client teams, sub-contractors, and vendors, as well as designing, I've always managed to meet tight deadlines. Because of this, I feel product management would be a natural fit and next step. Knowing the end-to-end process is essential. Getting to work with the stakeholders and hearing the strategy and limitations behind the project sets the foundation for the next step. Understanding the end user and researching what works best for them helps in designing experiences that they enjoy. Knowing how to test features and establish visual consistency also creates an end product that the user is happy with. Understanding how to communicate with product developers is key to help it all come together.</p>
+                        -->
+              </div>
+              <div class="column col-lg-8">
+                <!--Column two-->
+                <h2>Skills &amp; Tools</h2>
+                <div class="column col-md-6">
+                  <!--Column two, row one-->
+                  <h4>Skills</h4>
+                  <ul>
+                    <li>User centered design</li>
+                    <li>Customer experience</li>
+                    <li>User research</li>
+                    <li>User interviewing</li>
+                    <li>Usability testing</li>
+                    <li>Project manage</li>
+                  </ul>
+                </div>
+                <div class="column col-md-6">
+                  <!--Column two, row two-->
+                  <h4>Tools</h4>
+                  <ul>
+                    <li>Figma</li>
+                    <li>UX Research Tools</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Premier Rush</li>
+                    <li>Adobe InDesign</li>
+                  </ul>
+                </div>
+                <div class="center">
+                  <a
+                    href="files/resume-cv-wolfe-holly.pdf"
+                    target="_blank"
+                    class="button secondary"
+                    >Download my CV</a
+                  >
+                </div>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-
-<!-- For the footer  -->
-<footer id="contact" style="clear:both;"> <!-- style info is only used on about page to adjust the gray background caused by my image floating and the flow was broken  -->
-    <div class="container">
-
+    <!-- For the footer  -->
+    <footer id="contact" style="clear: both">
+      <!-- style info is only used on about page to adjust the gray background caused by my image floating and the flow was broken  -->
+      <div class="container">
         <h3>Get in touch</h3>
-        <p>Looking for opportunities to collaborate on improving user interactions and customer experiences! Click the link below to email me a time that works for you.</p> 
+        <p>
+          Looking for opportunities to collaborate on improving user
+          interactions and customer experiences! Click the link below to email
+          me a time that works for you.
+        </p>
         <div>
-            <a href="mailto:wolfedesignstudio@gmail.com" class="button contact">Email me</a>
+          <a href="mailto:wolfedesignstudio@gmail.com" class="button contact"
+            >Email me</a
+          >
         </div>
 
         <ul class="social">
-        <!--Social Media Layout and Placeholders-->
-        <!--For students, the images below should be updated with real svgs and links should be updated-->
-            <li>
-                <a href="https://www.linkedin.com/in/hollywolfeva" target="_blank">
-                    <img src="img/home/social-media-logos-black-linkedin.svg" alt="LinkedIn">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/wolfedesignstudio/" target="_blank">
-                    <img src="img/home/social-media-logos-black-instagram.svg" alt="Instagram">
-                </a>
-            </li>
+          <!--Social Media Layout and Placeholders-->
+          <!--For students, the images below should be updated with real svgs and links should be updated-->
+          <li>
+            <a href="https://www.linkedin.com/in/hollywolfeva" target="_blank">
+              <img
+                src="img/home/social-media-logos-black-linkedin.svg"
+                alt="LinkedIn"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/wolfedesignstudio/"
+              target="_blank"
+            >
+              <img
+                src="img/home/social-media-logos-black-instagram.svg"
+                alt="Instagram"
+              />
+            </a>
+          </li>
         </ul>
 
-        <p>Copyright 2023 Wolfe Design Studio</p>  
-    </div>
-    
-</footer>
-<!--Beginning of JavaScript - load jquery BEFORE scripts-->
+        <p>Copyright 2023 Wolfe Design Studio</p>
+      </div>
+    </footer>
+    <!--Beginning of JavaScript - load jquery BEFORE scripts-->
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
 
-<script src="js/scripts.js"></script>
-
-</body>
-</html> 
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
