@@ -69,7 +69,7 @@ img {
 
 /*change the default link color to your primary color (copied from your comments at the top of the document)*/
 a {
-  color: #cccc33;
+  color: #ffffff;
   text-decoration: none; /* No underlining */
 }
 a:hover {
@@ -391,7 +391,7 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
   }
-         
+       
   nav > ul > li {
     display: inline-block;
     padding:0 10px;
