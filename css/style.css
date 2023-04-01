@@ -79,12 +79,12 @@ a:hover {
 
 /*style the current nav item green*/
 .active a {
-    color: rgb(246, 252, 246);
+    color: #ffffff;
     text-decoration: none;
 }
 
 a:active { /* selected link */
-  color: green;
+  color: #008000;
 }
 
 /*Pseudo classes for Accessibility for Across the Web*/
@@ -99,7 +99,7 @@ a:focus {
 .button {
   display: inline-block;
   background-color: #cccc33;
-  color: white;
+  color: #525252;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
@@ -137,7 +137,7 @@ a:focus {
 .button.contact:hover {
   opacity: 0.8;
   background-color: green;
-  color: #ffffff;
+  color: #cccc33;
 }
 
 .button.contact:active {
